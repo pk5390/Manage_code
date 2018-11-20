@@ -1,0 +1,359 @@
+pkagabo@RD-ICT-PC3 MINGW64 ~/Desktop/Andela/manage_codes_with_git (second-branch)
+$ git init
+Initialized empty Git repository in C:/Users/pkagabo/Desktop/Andela/manage_codes_with_git/.git/
+
+pkagabo@RD-ICT-PC3 MINGW64 ~/Desktop/Andela/manage_codes_with_git (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        readme.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+pkagabo@RD-ICT-PC3 MINGW64 ~/Desktop/Andela/manage_codes_with_git (master)
+$ git add readme.txt
+
+pkagabo@RD-ICT-PC3 MINGW64 ~/Desktop/Andela/manage_codes_with_git (master)
+$ touch readme.txt
+
+pkagabo@RD-ICT-PC3 MINGW64 ~/Desktop/Andela/manage_codes_with_git (master)
+$ notepad readme.txt
+
+pkagabo@RD-ICT-PC3 MINGW64 ~/Desktop/Andela/manage_codes_with_git (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   readme.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   readme.txt
+
+
+pkagabo@RD-ICT-PC3 MINGW64 ~/Desktop/Andela/manage_codes_with_git (master)
+$ git commit -m "My first commit on my own file"
+[master (root-commit) 9a38c2d] My first commit on my own file
+ 1 file changed, 3 insertions(+)
+ create mode 100644 readme.txt
+
+pkagabo@RD-ICT-PC3 MINGW64 ~/Desktop/Andela/manage_codes_with_git (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   readme.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+pkagabo@RD-ICT-PC3 MINGW64 ~/Desktop/Andela/manage_codes_with_git (master)
+$ git add -p
+diff --git a/readme.txt b/readme.txt
+index 93944e9..98e437d 100644
+--- a/readme.txt
++++ b/readme.txt
+@@ -1,3 +1,4 @@
+ my project has the purpose to implement what i have learned
+  in the course manage your code with git and github by sharing a repositorys
+-on github
+\ No newline at end of file
++on github
++....
+\ No newline at end of file
+Stage this hunk [y,n,q,a,d,e,?]? y
+
+
+pkagabo@RD-ICT-PC3 MINGW64 ~/Desktop/Andela/manage_codes_with_git (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   readme.txt
+
+
+pkagabo@RD-ICT-PC3 MINGW64 ~/Desktop/Andela/manage_codes_with_git (master)
+$ pwd
+/c/Users/pkagabo/Desktop/Andela/manage_codes_with_git
+
+pkagabo@RD-ICT-PC3 MINGW64 ~/Desktop/Andela/manage_codes_with_git (master)
+$ touch code_scripts.txt
+
+pkagabo@RD-ICT-PC3 MINGW64 ~/Desktop/Andela/manage_codes_with_git (master)
+$ notepad code_scripts.txt
+
+pkagabo@RD-ICT-PC3 MINGW64 ~/Desktop/Andela/manage_codes_with_git (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   readme.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        code_scripts.txt
+
+
+pkagabo@RD-ICT-PC3 MINGW64 ~/Desktop/Andela/manage_codes_with_git (master)
+$ git add code_scripts.txt
+
+pkagabo@RD-ICT-PC3 MINGW64 ~/Desktop/Andela/manage_codes_with_git (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   code_scripts.txt
+        modified:   readme.txt
+
+
+pkagabo@RD-ICT-PC3 MINGW64 ~/Desktop/Andela/manage_codes_with_git (master)
+$ git commit -m "This file contains the scripting code that i have been using"
+[master bed3523] This file contains the scripting code that i have been using
+ 2 files changed, 98 insertions(+), 1 deletion(-)
+ create mode 100644 code_scripts.txt
+
+pkagabo@RD-ICT-PC3 MINGW64 ~/Desktop/Andela/manage_codes_with_git (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+pkagabo@RD-ICT-PC3 MINGW64 ~/Desktop/Andela/manage_codes_with_git (master)
+$ git add -p
+No changes.
+pkagabo@RD-ICT-PC3 MINGW64 ~/Desktop/Andela/manage_codes_with_git (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   code_scripts.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+pkagabo@RD-ICT-PC3 MINGW64 ~/Desktop/Andela/manage_codes_with_git (master)
+$ git commit -m"this text file contains my script codes"
+On branch master
+Changes not staged for commit:
+        modified:   code_scripts.txt
+
+no changes added to commit
+
+pkagabo@RD-ICT-PC3 MINGW64 ~/Desktop/Andela/manage_codes_with_git (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   code_scripts.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+pkagabo@RD-ICT-PC3 MINGW64 ~/Desktop/Andela/manage_codes_with_git (master)
+$ git add -p
+diff --git a/code_scripts.txt b/code_scripts.txt
+index 62e5762..67875d5 100644
+--- a/code_scripts.txt
++++ b/code_scripts.txt
+@@ -94,3 +94,45 @@ $ touch code_scripts.txt
+
+ pkagabo@RD-ICT-PC3 MINGW64 ~/Desktop/Andela/manage_codes_with_git (master)
+ $ notepad code_scripts.txt
++
++pkagabo@RD-ICT-PC3 MINGW64 ~/Desktop/Andela/manage_codes_with_git (master)
++$ git status
++On branch master
++Changes to be committed:
++  (use "git reset HEAD <file>..." to unstage)
++
++        modified:   readme.txt
++
++Untracked files:
++  (use "git add <file>..." to include in what will be committed)
++
++        code_scripts.txt
++
++
++pkagabo@RD-ICT-PC3 MINGW64 ~/Desktop/Andela/manage_codes_with_git (master)
++$ git add code_scripts.txt
++
++pkagabo@RD-ICT-PC3 MINGW64 ~/Desktop/Andela/manage_codes_with_git (master)
++$ git status
++On branch master
++Changes to be committed:
++  (use "git reset HEAD <file>..." to unstage)
++
++        new file:   code_scripts.txt
++        modified:   readme.txt
++
++
++pkagabo@RD-ICT-PC3 MINGW64 ~/Desktop/Andela/manage_codes_with_git (master)
++$ git commit -m "This file contains the scripting code that i have been using"
++[master bed3523] This file contains the scripting code that i have been using
++ 2 files changed, 98 insertions(+), 1 deletion(-)
++ create mode 100644 code_scripts.txt
++
++pkagabo@RD-ICT-PC3 MINGW64 ~/Desktop/Andela/manage_codes_with_git (master)
++$ git status
++On branch master
++nothing to commit, working tree clean
++
++pkagabo@RD-ICT-PC3 MINGW64 ~/Desktop/Andela/manage_codes_with_git (master)
++$ git add -p
++No changes.
+Stage this hunk [y,n,q,a,d,e,?]? y
+
+pkagabo@RD-ICT-PC3 MINGW64 ~/Desktop/Andela/manage_codes_with_git (master)
+$ git commit -m "this file contains infos about my personal projects"
+[master ded4b20] this file contains infos about my personal projects
+ 2 files changed, 87 insertions(+)
+ create mode 100644 personal_project.txt
+
+pkagabo@RD-ICT-PC3 MINGW64 ~/Desktop/Andela/manage_codes_with_git (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+pkagabo@RD-ICT-PC3 MINGW64 ~/Desktop/Andela/manage_codes_with_git (master)
+$ notepad personal_project.txt
+
+pkagabo@RD-ICT-PC3 MINGW64 ~/Desktop/Andela/manage_codes_with_git (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   personal_project.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+pkagabo@RD-ICT-PC3 MINGW64 ~/Desktop/Andela/manage_codes_with_git (master)
+$ git commit -m "this file contains infos about my personal projects"
+On branch master
+Changes not staged for commit:
+        modified:   personal_project.txt
+
+no changes added to commit
+
+pkagabo@RD-ICT-PC3 MINGW64 ~/Desktop/Andela/manage_codes_with_git (master)
+$ git add -p
+diff --git a/personal_project.txt b/personal_project.txt
+index c61d2e5..838036d 100644
+--- a/personal_project.txt
++++ b/personal_project.txt
+@@ -1,4 +1,6 @@
+ hello my friends!! i've been asked by the instrcutor to talk about my personalproject.
+
+ sorry that's so personal but i'm having fun learning
+-how to manage my codes with git
+\ No newline at end of file
++how to manage my codes with git
++
++i forgot to say thank you!!!
+\ No newline at end of file
+Stage this hunk [y,n,q,a,d,e,?]? y
+
+pkagabo@RD-ICT-PC3 MINGW64 ~/Desktop/Andela/manage_codes_with_git (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   personal_project.txt
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   code_scripts.txt
+
+
+pkagabo@RD-ICT-PC3 MINGW64 ~/Desktop/Andela/manage_codes_with_git (master)
+$ git commit -m "this is my last modification to the scripts file"
+[master 37162a3] this is my last modification to the scripts file
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+pkagabo@RD-ICT-PC3 MINGW64 ~/Desktop/Andela/manage_codes_with_git (master)
+$ git add -p
+diff --git a/code_scripts.txt b/code_scripts.txt
+index 538319b..a926f10 100644
+--- a/code_scripts.txt
++++ b/code_scripts.txt
+@@ -219,3 +219,54 @@ index 62e5762..67875d5 100644
+ +$ git add -p
+ +No changes.
+ Stage this hunk [y,n,q,a,d,e,?]? y
++
++pkagabo@RD-ICT-PC3 MINGW64 ~/Desktop/Andela/manage_codes_with_git (master)
++$ git commit -m "this file contains infos about my personal projects"
++[master ded4b20] this file contains infos about my personal projects
++ 2 files changed, 87 insertions(+)
++ create mode 100644 personal_project.txt
++
++pkagabo@RD-ICT-PC3 MINGW64 ~/Desktop/Andela/manage_codes_with_git (master)
++$ git status
++On branch master
++nothing to commit, working tree clean
++
++pkagabo@RD-ICT-PC3 MINGW64 ~/Desktop/Andela/manage_codes_with_git (master)
++$ notepad personal_project.txt
++
++pkagabo@RD-ICT-PC3 MINGW64 ~/Desktop/Andela/manage_codes_with_git (master)
++$ git status
++On branch master
++Changes not staged for commit:
++  (use "git add <file>..." to update what will be committed)
++  (use "git checkout -- <file>..." to discard changes in working directory)
++
++        modified:   personal_project.txt
++
++no changes added to commit (use "git add" and/or "git commit -a")
++
++pkagabo@RD-ICT-PC3 MINGW64 ~/Desktop/Andela/manage_codes_with_git (master)
++$ git commit -m "this file contains infos about my personal projects"
++On branch master
++Changes not staged for commit:
++        modified:   personal_project.txt
++
++no changes added to commit
++
++pkagabo@RD-ICT-PC3 MINGW64 ~/Desktop/Andela/manage_codes_with_git (master)
++$ git add -p
++diff --git a/personal_project.txt b/personal_project.txt
++index c61d2e5..838036d 100644
++--- a/personal_project.txt
+++++ b/personal_project.txt
++@@ -1,4 +1,6 @@
++ hello my friends!! i've been asked by the instrcutor to talk about my personalproject.
++
++ sorry that's so personal but i'm having fun learning
++-how to manage my codes with git
++\ No newline at end of file
+++how to manage my codes with git
+++
+++i forgot to say thank you!!!
++\ No newline at end of file
++Stage this hunk [y,n,q,a,d,e,?]? y
+Stage this hunk [y,n,q,a,d,e,?]? y
+
+
+pkagabo@RD-ICT-PC3 MINGW64 ~/Desktop/Andela/manage_codes_with_git (master)
+$ 
